@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Mi calculadora</h1>
+    </header>
+    <nav></nav>
+    <section>
+        <label for="idnumero1">Número1:</label>
+        <input type="number" id="idnumero1">
+        <label for="idnumero2">Número2:</label>
+        <input type="number" name="" id="idnumero2">
+
+        <button onclick="document.getElementById('idnumero1').style.color='blue'">Cambiar Estilo 1</button>
+        <button onclick="document.getElementById('idnumero2').style.background='red'">Cambiar Estilo 2</button>
+        <button onclick="document.getElementById('idResultado').innerHTML=5+8">Presentar Resultado</button>
+
+        <button onclick="document.getElementById('iddiv').innerHTML='<button>Hola</button>'">Agregar elemento</button>
+
+        <label id="idResultado"  for=""></label>
+        <div id="iddiv">
+           <!-- <button>Hola</button>-->
+        </div>
+
+        <img id="imagen1" src="https://img.freepik.com/vector-gratis/ilustracion-icono-vector-dibujos-animados-lindo-perro-shiba-inu-llorando-concepto-icono-naturaleza-animal-plano-aislado_138676-5854.jpg?w=740&t=st=1700319962~exp=1700320562~hmac=d8c09bb099f6484a21ec7db77864b2c30df4c7107ad3c5eee0674ff5ad11113a.png" alt="no hay imagen">
+        <button onclick="document.getElementById('imagen1').src='https://img.freepik.com/vector-gratis/cute-shiba-inu-business-holding-dinero-cartoon-vector-icon-illustration-concepto-icono-negocio-animal-aislado-vector-premium-estilo-dibujos-animados-plana_138676-3887.jpg?w=740&t=st=1700320482~exp=1700321082~hmac=d82fef9a144425df4726021269fa3564d19dd5ee51516086b2a2e76146e8d16a.png'">Cambiar imagen</button>
+    </section>
+    <footer>Todos los derechos reservados</footer>
+</body>
+</html>
