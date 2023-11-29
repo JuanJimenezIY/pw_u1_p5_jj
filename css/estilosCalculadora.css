@@ -1,52 +1,57 @@
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.calculadora-general{
-    display: grid;
-    background-color: brown;
-    border-radius: 15px;
-    grid-template-columns: repeat(1,320px);
+.calculadora-general {
+  display: grid;
+  background-color: brown;
 
-    box-shadow: 50px 20px 20px 20px #00000033;
+  border-radius: 15px;
+  grid-template-columns: repeat(1, 320px);
+
+  box-shadow: 50px 20px 15px 10px #00000033;
 }
-.calculadora-numeros{
-    display: grid;
-    padding: 10px 10px 0px 10px;
-  
-    grid-template-columns: repeat(3,100px);
-    
-   
-    
+.calculadora-numeros {
+  display: grid;
+  padding: 10px 10px 0px 10px;
+
+  grid-template-columns: repeat(3, 100px);
 }
-.calculadora-operaciones{
-    display: grid;
-    padding: 5px 10px 5px 10px;
-    grid-template-columns: repeat(2,150px);
-   
-    
+.calculadora-operaciones {
+  display: grid;
+  padding: 5px 10px 15px 10px;
+  grid-template-columns: repeat(2, 150px);
 }
 
-.col-3{
-    grid-column: span 3;
+.col-3 {
+  grid-column: span 3;
 }
-button{
-    margin: 3px;
+button {
+  border-style: hidden;
+  margin: 5px;
+  border-radius: 8px;
 }
-label{
-   
-  
-    background-color: rgb(177, 98, 98);
-    color: rgb(68, 40, 40);
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+label {
+  background-color: rgb(177, 98, 98);
+  color: rgb(219, 213, 213);
+  height: 25px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  margin-left: 15px;
 }
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 100px;
+h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  color: rgb(34, 33, 33)
+}
+button:hover {
+  background-color: rgb(177, 98, 98);
+  color: white; 
+  box-shadow: 0px 0px 1px 2px black;
 }
