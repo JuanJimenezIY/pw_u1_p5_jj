@@ -4,7 +4,7 @@
   align-items: center;
 }
 .calculadora-general {
-  display: grid;
+  display: box;
   background-color: brown;
 
   border-radius: 15px;
