@@ -1,5 +1,7 @@
 body {
-    background-color: #33bd81;
+    background-color: #4e7b68;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   }
   .container {
     display: grid;
@@ -8,22 +10,18 @@ body {
   }
   
   .form {
-    height: 500px;
+    display:  block;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
     width: 700px;
     background-color: #e6e6e6;
     border-radius: 8px;
     padding: 20px 30px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
+
     box-shadow: 0 0 40px -10px #000;
   }
-  h2 {
-    margin: 10px 0px;
-    padding-bottom: 10px;
-    width: 180px;
-    color: #78788c;
-    border-bottom: 3px solid #78788c;
-  }
+
   p:before {
     content: attr(type);
     display: block;
@@ -32,23 +30,22 @@ body {
     color: #5a5a5a;
   }
   input {
-    width: 100%;
-    border: 0;
-    border-bottom: 2px solid #bebed2;
-    background: none;
+    width: 500px;
+    background: rgb(240, 240, 240);
+
     color: rgb(60, 60, 60);
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
+
   }
   input:focus {
     border-bottom: 3px solid #78788c;
   }
   button {
-    color: #53535f;
-    background-color: #a1c3da;
-    border-style: groove;
-    border-radius: 5px;
-    padding: 3px 5px;
+    color: #c5c5c9;
+    background-color: #3f534d;
+    border-color: #8d8d8e;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 8px 15px;
   }
   .boton {
     display: flex;
@@ -61,11 +58,31 @@ body {
     box-shadow: 0px 0px 1px 2px #59abe3;
   }
   h1 {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
+ 
     display: flex;
     justify-content: center;
     margin: 15px;
     color: #474752;
   }
-  
+  td{
+    color: #474752;
+    margin: auto;
+    
+    border-color: #474752;
+    padding: 10px 40px;
+    background-color: #ededed;
+  }
+  table{
+    width: 400px;
+    margin: 18px;
+    background-color: #435a50;
+  }
+  .cab{
+    background-color: #8faea2;
+    color: #ececec;
+  }
+  p{
+    display: grid;
+    justify-content: center;
+    
+  }

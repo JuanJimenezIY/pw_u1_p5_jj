@@ -8,39 +8,56 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div id="myApp" class="container">
         <div class="estudiantes">
       <header><h1>Estudiantes</h1></header>
       <nav></nav>
       <section>
-        <form
-          class="form"
-        >
-          
+       
+      <div class="form">
           <p type="Nombre:">
-            <input type="text" />
+            <input type="text" v-model="nombre"/>
           </p>
           <p type="Apellido:">
-            <input type="text" />
+            <input type="text" v-model="apellido"/>
           </p>
           <p type="Edad:">
-            <input type="text" />
+            <input type="text" v-model="edad"/>
           </p>
           <p type="Ciudad:">
-            <input type="text" />
+            <input type="text" v-model="ciudad"/>
           </p>
           <p type="Correo:">
-            <input type="text" />
+            <input type="text" v-model="correo"/>
           </p>
+        
           <div class="boton">
-            <button>Agregar</button>
+            <button @click="agregarEstudiante">Agregar</button>
 
           </div>
-        </form>
+          <table>
+            <tr >
+              <td class="cab" ><label for="">Nombre</label></td>
+              <td class="cab" ><label for="">Apellido</label></td>
+              <td class="cab" ><label for="">Edad</label></td>
+              <td class="cab" ><label for="">Ciudad</label></td>
+              <td class="cab" ><label for="">Correo</label></td>
+          </tr>
+            <tr class="cab" v-for="({nombre,apellido,edad,ciudad,correo},index) in lista">
+                <td><label for="">{{nombre}}</label></td>
+                <td><label for="">{{apellido}}</label></td>
+                <td><label for="">{{edad}}</label></td>
+                <td><label for="">{{ciudad}}</label></td>
+                <td><label for="">{{correo}}</label></td>
+            </tr>
+          
+        </table>
+      </div>
       </section>
       <footer></footer>
-      <script src="../js/appFormulario.js"></script>
+     
     </div>
     </div>
+    <script src="../js/appFormulario.js"></script>
   </body>
 </html>
